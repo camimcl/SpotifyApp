@@ -1,0 +1,60 @@
+
+
+metodos essenciais: 
+
+
+OBS: a tela de seleção funciona como um MENU para realizar todas as operações do CRUD. Dito isso, nela irão estar presentes métodos nomeados 
+com suas respectivas funções, mas todos eles utilizam do metodo de identificar o indice escolhido da choicebox e passar para a lista de clientes 
+existentes para redirecionar á classe referente á operação (Tela de update, tela de cadastro, tela de Delete) e após passar por estas classes, é 
+realizado o direcionamento para a classe do banco de dados onde o método irá de fato realizar as operações CRUD exigidas.
+
+
+
+
+##inserir os dados->
+este método recebe como parametro tipo de dados Musica que é proveniente da tela de cadastro,
+onde é feita a captura dos dados inseridos para aquela musica
+primeiramente é feito um array de objetos do tipo musica, onde é utilizado 
+um metodo que retorna todos os objetos "MUSICA"(getMusicas) já armazenados no banco
+para que isso seja utilizado no incremento de um ID para cada novo objeto
+adicionado.--ou seja, toda vez que um objeto novo é adicionado nessa lista, o atributo
+ID é incrementado para que cada musica tenha um identificador próprio.
+e por fim, neste método é utilizado a propriedade "store" do db4o para que seja armazenado 
+o cliente criado.
+
+##Update de dados->
+
+este método recebe como parametro o ID da musica selecionada, e um objeto Musica
+que é a musicaAtualizada(com as novas informações para a musica que foi selecionada) proveniente
+da tela de atualização. Dentro desse metodo há utilização do método de busca por ID, 
+que recebe o id do paramentro do método para relacionar qual a musica que está sendo atualizada.
+tendo da musicaAtualizada e o id referente a musica a qual está sendo atualizada, é feito um algoritmo 
+de substituição, onde ele pega as informações dos atributos da musicaAtualizada e verifica se houve 
+alguma alteração(se não está nulo os atributos), caso não estejam nulos, a nova informação é sobreposta 
+á informação anterior, caso seja nulo, não há substituição. 
+e por fim, usamos o método store para armazenar a musica antiga, só que com as informações atualizadas.
+
+
+##deletarMusica -->
+este método recebe apenas um id que é proveniente da tela de seleção e se refere ao id da musica a ser deletada
+com isto, utilizo outro metodo para buscar as musicas por id (que recebe o id oferecido pela tela de seleção)
+verifica se a musica com o id correspondente não é nula , e utiliza do metodo do Db4o "delete" para remover a musica do banco.
+
+
+
+##select(metodo para ver as informações de uma música)
+este metodo foi implementado na tela de seleção dos objetos , onde há uma choicebox, que por meio do 
+metodo initialize do JAVAFX, inicia essa tela de seleção com uma choicebox povoada com os nomes das musicas que 
+ja foram cadastradas no banco. Desta forma, ao selecionar uma opção na choicebox, o usuario pode clicar no botao
+de "PLAY", para assim dispor as informações detalhadas da musica selecionada. 
+Este metodo foi estruturado da seguinte forma:
+com o povoamento da choicebox no initialize, ao escolher uma musica, é retornado o indice da escolha na choicebox,
+apos a verificação de se o indice escolhido não é nulo, é criada um array de objetos do tipo Musica, que com o instanciamento do banco,
+faz a utilização do metodo "getMusicas" para obter todas as musicas inseridas no banco. Assim sendo, ele atribui uma variavel para
+receber qual musica dentro do Array de Musicas tem o indice relacionado ao selecionado na choicebox.
+Dessa forma, conseguimos atribuir uma variavel para receber a musica que está sendo selecionada e por conseguinte utilizar de outros metodos 
+de exibição (getMusicImage;InicializarMusica)para mostrar na tela as informações da musica selecionada (imagem,artista,album,nome)
+
+
+
+

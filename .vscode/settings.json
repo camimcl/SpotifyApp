@@ -1,0 +1,24 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\Cami\\Documents\\java libs\\javafx-sdk-21.0.2\\lib\\javafx-swt.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\cami\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\1069c35a-42db-499f-ba14-68b13143a7c8\\javafx-sdk-21.0.2\\lib\\javafx-swt.jar"
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable"
+}

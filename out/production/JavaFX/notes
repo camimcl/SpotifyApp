@@ -1,0 +1,18 @@
+Project:
+Create a register application with OOP database, with functionalities for
+update,delete,insert and select(CRUD), and with interfaces.
+
+1- for the interfaces i'll use the Scene builder and JavaFX .
+2- for the OOP database i'll use the "DB4o" lib.
+
+===========Sketch===========
+*menu page with the operations needed (INSERT, DELETE, SELECT, UPDATE)
+*1 page intended fore each operation.
+*1 class intended for client information
+
+*MVC architecture
+-model class will contain the algorithm for each operation of the referent page.(business rule)
+-view class will be the view pages that capture the information from the user.
+-controller class will process the information received by the view class.
+
+=============================

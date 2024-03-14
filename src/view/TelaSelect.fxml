@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(to bottom,#282928,#1b1c1b);;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaSelectController">
+   <children>
+      <ChoiceBox fx:id="choiceBoxSelect" focusTraversable="false" layoutX="130.0" layoutY="78.0" pickOnBounds="false" prefHeight="27.0" prefWidth="247.0" style="-fx-border-color: white;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></ChoiceBox>
+      <Label fx:id="labelSelect" layoutX="178.0" layoutY="20.0" prefHeight="48.0" prefWidth="169.0" text="Playlist" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="90.0" layoutX="2.0" layoutY="8.0" preserveRatio="true">
+         <image>
+            <Image url="@../assets/SPOTIFY-LOGO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="136.0" layoutY="89.0" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../assets/icons8-coração-32.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="backgroundPane" layoutX="94.0" layoutY="163.0" prefHeight="337.0" prefWidth="315.0" style="-fx-background-radius: 20px;">
+         <children>
+            <Pane fx:id="pane" layoutX="58.0" layoutY="26.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px;" />
+            <Label fx:id="caixaArtista" layoutX="39.0" layoutY="234.0" prefHeight="34.0" prefWidth="238.0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="caixaAlbum" layoutX="39.0" layoutY="274.0" prefHeight="34.0" prefWidth="270.0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="4.0" layoutY="500.0" prefHeight="71.0" prefWidth="500.0" spacing="15.0">
+         <children>
+            <Button fx:id="pauseButton" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="40.0" prefWidth="50.0" style="-fx-background-radius: 50;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-pausa-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="playButton" mnemonicParsing="false" onMouseClicked="#play" prefHeight="40.0" prefWidth="50.0" style="-fx-background-radius: 50;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-reproduzir-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="stopButton" mnemonicParsing="false" onMouseClicked="#stop" prefHeight="40.0" prefWidth="50.0" style="-fx-background-radius: 50;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-parar-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="592.0" prefHeight="60.0" prefWidth="500.0" spacing="45.0" style="-fx-background-color: linear-gradient(to bottom,#282928,#1b1c1b);">
+         <children>
+            <Button mnemonicParsing="false" onAction="#cadastrarUsuario" prefHeight="40.0" prefWidth="50.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-adicionar-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#fazerDelete" prefHeight="40.0" prefWidth="50.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-lixeira-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="selectButton" mnemonicParsing="false" onMouseClicked="#abrirTelaDetalhada" prefHeight="40.0" prefWidth="50.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/reprodutor-de-musica.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#fazerUpdate" prefHeight="40.0" prefWidth="50.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-atualizar-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</Pane>

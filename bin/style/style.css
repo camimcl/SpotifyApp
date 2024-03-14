@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../fonts/Gotham-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+#labelSelect{
+    -fx-font-size:32px;
+    -fx-font-family:"Gotham-Black";
+}
+
+.button{
+    -fx-text-fill: #1c1b1b;
+    -fx-background-radius:15px;
+    -fx-background-color:#1ed760 ;
+    
+}
+.button:hover{
+    -fx-background-color:#ffffff ;
+    -fx-scale-x:1.03;
+    -fx-scale-y:1.03;
+}
+.choice-box{
+    -fx-background-color: white;
+    -fx-background-radius:10px;
+    -fx-border-radius:10;
+    -fx-font-size:20px;
+    -fx-text-fill:rgb(255, 255, 255);
+}
+.choice-box .menu-item{
+    -fx-font-size:20px;
+} 
+#atualizacaoLabel{
+    -fx-text-alignment: center;
+    -fx-font-size:30px;
+    -fx-font-family:"Gotham-Black";
+}
+#labelAdicionar{
+    -fx-font-size:27px;
+    -fx-font-family:"Gotham-Black";
+}
+#caixaAlbum{
+    -fx-text-fill: #ffffff;
+    -fx-font-family:"Gotham-Black";
+    -fx-font-size:15px;
+}
+#caixaArtista{
+    -fx-text-fill: #ffffff;
+    -fx-font-family:"Gotham-Black";
+    -fx-font-size:15px;
+}
+
+#backgroundPane:hover{
+    -fx-scale-x:1.03;
+    -fx-scale-y:1.03;
+}
