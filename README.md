@@ -5,9 +5,8 @@ The project involves developing a CRUD service with data consistency.
 
 ## Content 
 #### I built a CRUD application based on Spotify, the app must register the music and referent data(mp3, image, name, artist, album).
-#### The application is designed for playing the stored media as well as performing CRUD operations for data manipulation. 
+#### The application is designed to play the stored media and perform CRUD operations for data manipulation. 
 ## Used Technologies
-
 - *Assets:* Images, and mp3 files. 
 - *CRUD:* To store the music data based on the operations READ, DELETE, CREATE & UPDATE.
 - *OOP*.
@@ -18,5 +17,8 @@ The project involves developing a CRUD service with data consistency.
 - *JavaFX Interface*
 - *MVC architecture (Model, View, Controller).*
 - *Scene Builder: FXML files for the view*
+- 
+### Preview
+https://github.com/user-attachments/assets/dfb042e5-0fcb-4338-b82c-a68632846faa
 
 
