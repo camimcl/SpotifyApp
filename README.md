@@ -10,7 +10,7 @@ The project involves developing a CRUD service with data consistency.
 - *Assets:* Images, and mp3 files. 
 - *CRUD:* To store the music data based on the operations READ, DELETE, CREATE & UPDATE.
 - *OOP*.
-- *DB4o:* Is an object-oriented-programming database library used for data consistency.
+- *DB4o:* Is an object-oriented-programming database library used for data persistence.
 - *Singleton*: For the database instance consistency.
 - *INTELLIJ:* Development environment used to carry out the challenge.
 - *Git:* distributed version control system.
