@@ -19,6 +19,10 @@ The project involves developing a CRUD service with data consistency.
 - *Scene Builder: FXML files for the view*
 - 
 ### Preview
-https://github.com/user-attachments/assets/dfb042e5-0fcb-4338-b82c-a68632846faa
+
+https://github.com/user-attachments/assets/76c0e8db-4ccc-41a1-8b77-75cf92e4fe9e
+
+
+
 
 
